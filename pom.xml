@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <dependencies>
@@ -53,5 +54,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Internal repo</name>
+            <url>file:///</url>
+        </repository>
+    </distributionManagement>
 
 </project>
